@@ -21,16 +21,12 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL(env.NEXT_PUBLIC_APP_URL!),
-
   applicationName: env.NEXT_PUBLIC_APP_NAME,
-
   title: {
     default: env.NEXT_PUBLIC_APP_NAME,
     template: `%s | ${env.NEXT_PUBLIC_APP_NAME}`,
   },
-
   description: 'Production-grade AI powered code review platform for modern engineering teams.',
-
   keywords: [
     'AI',
     'Code Review',
@@ -41,20 +37,16 @@ export const metadata: Metadata = {
     'LLM',
     'CodeRabbit',
   ],
-
   authors: [
     {
       name: 'Deepansh Gangwar',
     },
   ],
-
   creator: 'Deepansh Gangwar',
-
   robots: {
     index: true,
     follow: true,
   },
-
   openGraph: {
     type: 'website',
     locale: 'en_US',
@@ -62,7 +54,6 @@ export const metadata: Metadata = {
     title: 'AI Code Review',
     description: 'Production-grade AI powered code review platform for engineering teams.',
   },
-
   twitter: {
     card: 'summary_large_image',
     title: 'AI Code Review',
