@@ -10,6 +10,8 @@ export const env = createEnv({
     ANTHROPIC_API_KEY: z.string().optional(),
     GOOGLE_AI_API_KEY: z.string().optional(),
     REDIS_URL: z.url().optional(),
+    BETTER_AUTH_SECRET: z.string().min(32),
+    BETTER_AUTH_API_KEY: z.string().min(32),
   },
 
   client: {
@@ -25,6 +27,8 @@ export const env = createEnv({
     ANTHROPIC_API_KEY: process.env.ANTHROPIC_API_KEY,
     GOOGLE_AI_API_KEY: process.env.GOOGLE_AI_API_KEY,
     REDIS_URL: process.env.REDIS_URL,
+    BETTER_AUTH_SECRET: process.env.BETTER_AUTH_SECRET,
+    BETTER_AUTH_API_KEY: process.env.BETTER_AUTH_API_KEY,
     NEXT_PUBLIC_APP_NAME: process.env.NEXT_PUBLIC_APP_NAME,
     NEXT_PUBLIC_APP_URL: process.env.NEXT_PUBLIC_APP_URL,
   },
